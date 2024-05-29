@@ -1,0 +1,326 @@
+/*Se crea el enlace de las fuentes que se utilizaran en el proyecto*/
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Teko:wght@600&display=swap');
+
+
+/*Se definen los estilos de las fuentes para los textos*/
+
+#titulo{
+    font-family: "Teko", sans-serif;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.66);
+    color: white;
+    text-align: center;
+}
+
+footer{
+    font-family: "Teko", sans-serif;
+    font-weight: 300;
+}
+
+.TextoDescripcion{
+    text-align: center;
+    font-family: "Khand", sans-serif;   
+    font-weight: 400;
+}
+
+.nav-enlace{
+    font-family: "Teko", sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    color: white;
+    padding: 10px 30px;
+    text-decoration:underline;
+    font-size: 25px;
+}
+
+.Dato{
+    text-align: center;
+    font-family: "Khand", sans-serif;   
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.Ingreso{
+    text-align: center;
+    font-family: "Khand", sans-serif;   
+    font-weight: 300;
+    width: 300px;
+}
+
+.boton{
+    font-family: "Teko", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/*Ajustar redes y video*/
+.RedesVideo{
+    display: flex;
+    justify-content:space-around;
+}
+
+.RedesSociales{
+    size: 10px 15px;
+}
+
+/*Se asigna la imagen, estilo y color que tendra en la parte superior*/
+header{
+    height: 250px;
+    background-image: url(../img/material/FONDOHOME.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.ImgLogo{
+    width: 15%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ebebeb;
+}
+
+/*Se ajusta la distribución e interacción que tendrá las motocicletas y las marcas*/
+.Crentrar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ImgMoto{
+    width: 18%;
+    transition: all 300ms;
+    position: relative;
+}
+
+.ImgMarca{
+    width: 10%;
+    transition: all 300ms;
+    position: relative;
+}
+
+.ImgMoto:hover,.ImgMarca:hover{
+    transform: scale(1.15);
+}
+
+/*Formulario*/
+.TodoDatos{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.Ingreso{
+    padding: 5px 250px;
+    background-color:#dddddd;
+    border: none;
+}
+
+#observacion{
+    padding: 50px 250px;
+}
+
+.boton{
+    margin: 0 auto;
+    display: block;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: #474747;
+    color: white;
+    transition: all 300ms;
+    position: relative;
+}
+
+.boton:hover{
+    transform: scale(1.15);
+}
+
+
+
+@media (max-width: 480px){
+
+    header{
+        height: 100px;
+        width: 100%;
+    }
+
+    nav{
+        background-size: 100%;
+        padding: 1px;
+        display: flex;
+    }
+
+    .nav-enlace{
+        padding: 1px 5px;
+        font-size: 10px;
+    }
+    
+    #titulo{
+        background-size: 100%;
+        font-size: 70%;
+    }
+
+    .TextoDescripcion{
+        font-size: 8px;
+    }
+
+    .RedesSociales{
+        width: 8%;
+    }
+
+    .Video{
+        width: 60%;
+    }
+
+    .Dato, .Ingreso{
+        font-size: 10px;
+    }
+    
+    .Ingreso{
+        padding: 5px 10px;
+    }
+    
+    #observacion{
+        padding: 50px 10px;
+    }
+    
+    .boton{
+        padding: 5px 10px;
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px){
+
+    header{
+        height: 150px;
+        width: 100%;
+    }
+
+    nav{
+        background-size: 100%;
+        padding: 5px;
+        display: flex;
+    }
+
+    .nav-enlace{
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+    
+    #titulo{
+        background-size: 100%;
+        font-size: 16px;
+    }
+
+    .TextoDescripcion{
+        font-size: 12px;
+    }
+
+    .RedesSociales{
+        width: 10%;
+    }
+
+    .Video{
+        width: 65%;
+    }
+    
+    .Dato, .Ingreso{
+        font-size: 15px;
+    }
+    
+    .Ingreso{
+        padding: 5px 85px;
+    }
+    
+    #observacion{
+        padding: 50px 85px;
+    }
+    
+    .boton{
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    header{
+        background-position: center center;
+        background-size: 100%;
+        height: 200px;
+        width: 100%;
+    }
+
+    nav{
+        background-size: 100%;
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav-enlace{
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+    
+    #titulo{
+        background-size: 100%;
+        font-size: 20px;
+    }
+
+    .TextoDescripcion{
+        font-size: 15px;
+    }
+
+    .RedesSociales{
+        width: 12%;
+    }
+
+    .Video{
+        width: 75%;
+    }
+
+    .Dato, .Ingreso{
+        font-size: 18px;
+    }
+    
+    .Ingreso{
+        padding: 5px 200px;
+    }
+    
+    #observacion{
+        padding: 50px 200px;
+    }
+    
+    .boton{
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+/*
+480
+768
+1024
+*/
